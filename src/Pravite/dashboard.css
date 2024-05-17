@@ -1,0 +1,80 @@
+
+body{
+
+  background-color: #202020;
+  /* background-color: #E8F0FE; */
+}
+.gradient-text {
+    background: linear-gradient(45deg, #DC117C, #7E028F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .taskbar{
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(45deg, #DC117C, #7E028F);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    padding: 6px;
+  }
+  .task_items{
+    margin: 10px 0px;
+  }
+  /* .title_text h4::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(45deg, #DC117C, #7E028F);
+    top: 8px;
+    left: 105px;
+    border-radius: 50px;
+  } */
+
+  .nave_items{
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .nave_items ul{
+    width: 100%;
+  }
+  .nave_items ul li{
+    width: 80%;
+    padding: 5px;
+    transition: 0.3s all ease-in-out;
+   
+  }
+  .activebg{
+      background-color: rgb(221, 218, 218);
+      border-left: 2px solid gray ;
+      width: 100%;
+  }
+  .nave_items ul li:hover{
+    background-color: rgb(221, 218, 218);
+      border-left: 2px solid gray ;
+      width: 70%;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+  }
+thead{
+  border-radius: 10px;
+}
+  th{
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+  td{
+    text-align: center;
+    text-transform: capitalize;
+  }
+  tr{
+    margin: 6px 0px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding: 6px 0px;
+  }
+  tr:hover{
+    background-color: rgb(43, 42, 42);
+    color: #fff;
+  }

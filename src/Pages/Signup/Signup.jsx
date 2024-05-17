@@ -8,11 +8,12 @@ const Signup = () => {
   const {newuser,createaccount,submitForm,isLoding}=useGlobalContext()
   return (
     <div className="flex 
-    min-h-full 
-    flex-col 
+    w-[100%]
+    item-center
     justify-center 
     px-6 py-12 
     lg:px-8">
+      <div className='bg-[#fff] w-[350px] p-[20px] rounded-sm'>
     <div className="sm:mx-auto 
     sm:w-full 
     sm:max-w-sm">
@@ -108,7 +109,6 @@ const Signup = () => {
               p-[10px] bg-[#E8F0FE]"/>
             </div>
           </div>
-
           </div>
           {/* Email Address input */}
           <div>
@@ -231,6 +231,7 @@ const Signup = () => {
             <NavLink to="/">Login</NavLink>
           </span>
         </div>
+      </div>
       </div>
     </div>
   );
