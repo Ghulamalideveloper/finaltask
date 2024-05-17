@@ -1,4 +1,5 @@
 import React from 'react'
+<<<<<<< HEAD
 import "./dashboard.css"
 
 import { Navigate } from 'react-router-dom';
@@ -29,6 +30,13 @@ const Dashboard = () => {
     }
 
     </>
+=======
+import Layout from '../Layout/Layout'
+
+const Dashboard = () => {
+  return (
+    <Layout/>
+>>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
   )
 }
 
