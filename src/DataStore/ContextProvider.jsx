@@ -1,9 +1,5 @@
 import axios from 'axios';
-<<<<<<< HEAD
 import React, { createContext, useContext, useEffect, useRef, useState } from 'react'
-=======
-import React, { createContext, useContext, useRef, useState } from 'react'
->>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
 import { json, useNavigate } from 'react-router-dom';
 import { createUser,getproducts,postApi,userlogin} from '../Api/ApiStore';
 
@@ -12,14 +8,10 @@ import { createUser,getproducts,postApi,userlogin} from '../Api/ApiStore';
 
 const AppContext = createContext();
 const ContextProvider = ({children}) => {
-<<<<<<< HEAD
 
  const inputRef = useRef()
-=======
-  const userImage = useRef()
->>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
  const navigate = useNavigate();
- const [productImage,setProductImage]=useState()
+ const [Image,setProductImage]=useState()
   const [isLoding,setIsLoding]=useState(false);
   const [islogout, setIsLogout] = useState(false);
   const [error,setError]=useState('');
@@ -108,13 +100,8 @@ const  userlogininput=(e)=>{
         email:userLogin.email,
         password:userLogin.password,
       })
-<<<<<<< HEAD
       localStorage.setItem('user', JSON.stringify(respance.data));
       console.log(userToken)
-=======
-      localStorage.setItem('user', JSON.stringify(respance.data))
-      navigate("/layout")
->>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
       setIsLoding(false)
       setError(respance.data.Messege) 
       navigate('/dashboard')
@@ -125,7 +112,6 @@ const  userlogininput=(e)=>{
     } 
   }
 
-<<<<<<< HEAD
 
 
 
@@ -250,45 +236,6 @@ const addProductsunmit=async(e)=>{
     console.log(error)
   }
 }
-=======
-  //=====add product function=====//
-  const adProducthandle=(e)=>{
-    const{name,value}=e.target;
-    setProduct((product)=>{
-      return{
-        ...product,
-        [name] : value,
-      }
-    })
-  }
-
-  const handleImage=(e)=>{
-    setProductImage(e.target.files[0]);
-  }
-
-  const addProductfun=(e)=>{
-    e.preventDefault();
-  }
-
-
-
-  const handleFile=()=>{
-    userImage.current.click();
-  }
-
-
-
-  //===logout user====//
-  const logoutuser=()=>{
-    localStorage.removeItem("user");
-    navigate("/")
-    setUserLogin({
-      email:"",
-      password:"",
-    })
-  }
-
->>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
 
   return (
     <AppContext.Provider value={{
@@ -300,7 +247,6 @@ const addProductsunmit=async(e)=>{
       submituserlogin,
       userlogininput,
       error,
-<<<<<<< HEAD
       toggleLogout,
       islogout,
       logoutUser,
@@ -317,16 +263,6 @@ const addProductsunmit=async(e)=>{
       handleImageuplode,
       inputRef,
       productImage,
-=======
-      addProductfun,
-      product,
-      adProducthandle,
-      handleImage,
-      userImage,
-      handleFile,
-      logoutuser,
-     
->>>>>>> 6a41b5031287c7be5191be2a0fe2211376df7f22
       }}>
         {children}
     </AppContext.Provider>
